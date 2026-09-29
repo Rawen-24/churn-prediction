@@ -8,8 +8,8 @@ SRC = Path(__file__).resolve().parent.parent / "src"
 model = joblib.load(SRC / "model.joblib")
 columns = joblib.load(SRC / "columns.joblib")
 
-st.set_page_config(page_title="Churn Prediction", page_icon="📉", layout="wide")
-st.title("📉 Customer Churn Prediction")
+st.set_page_config(page_title="Churn Prediction", layout="wide")
+st.title("Customer Churn Prediction")
 st.caption("XGBoost model trained on the Telco Customer Churn dataset")
 
 with st.sidebar:
