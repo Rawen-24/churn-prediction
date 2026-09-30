@@ -91,14 +91,8 @@ For the GenAI feature, create `python/.env` with `ANTHROPIC_API_KEY` and/or `OPE
 - Retention success rates are unknown.
 - GenAI messages need human review.
 
-## Zusammenfassung (Deutsch)
-Dieses Projekt sagt voraus, welche Telekommunikationskunden mit hoher Wahrscheinlichkeit kündigen.
-Ein XGBoost-Modell erreicht eine AUC von 0,84, eine einfache logistische Regression ebenso.
-SHAP zeigt die wichtigsten Einflussfaktoren: kurze Vertragsdauer, monatlich kündbare Verträge,
-Glasfaser-Tarife und Zahlung per elektronischem Scheck. Mit einem Schwellenwert von 0,3 statt 0,5
-werden 75 % statt 52 % der Kündiger erkannt, bei mehr Fehlalarmen. Ein Streamlit-Dashboard zeigt
-das Risiko pro Kunde und schlägt Maßnahmen vor. Eine KI-Funktion formuliert einen Entwurf für die
-Kundenansprache, den ein Mensch prüft, bevor er verschickt wird.
+## Summary
+This project predicts which telecommunications customers are likely to cancel their contracts. An XGBoost model reaches an AUC of 0.84, and a simple logistic regression does the same. SHAP shows the most important influencing factors: short contract tenure, month-to-month contracts, fiber-optic plans, and payment by electronic check. With a threshold of 0.3 instead of 0.5, 75% instead of 52% of churners are identified, at the cost of more false alarms. A Streamlit dashboard shows the risk per customer and suggests actions. An AI feature drafts a message for customer outreach, which a human reviews before it is sent.
 
 ## Tech
 Python, SQL (SQLite), pandas, scikit-learn, XGBoost, SHAP, Streamlit, Claude API, OpenAI API,
